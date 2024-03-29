@@ -1,16 +1,15 @@
-// const { MongoClient } = require("mongodb");
 import { MongoClient } from "mongodb";
 
-// Connection URI for MongoDB Atlas
+
 const uri = "mongodb+srv://aman:aman123@mern.feewhhl.mongodb.net";
 
-// Database Name
+
 const dbName = "test";
 
-// Collection Name
+
 const collectionName = "laptops";
 
-// Array of JSON objects
+
 const jsonArray = [
   {
     "": 0,
@@ -14788,7 +14787,7 @@ async function insertDocuments() {
     const db = client.db(dbName);
     const collection = db.collection(collectionName);
 
-    // Insert all JSON objects into the collection at once
+    
     const result = await collection.insertMany(jsonArray);
     console.log("Inserted documents:", result.insertedCount);
   } catch (err) {

@@ -28,7 +28,7 @@ function Mobile() {
   return (
     <>
       {loading ? (
-        "Loading"
+        <div className="min-h-screen text-4xl  flex items-center justify-center bg-gray-300">Ha Bhai itni jaldi kyu hai ruko jara....</div> 
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {mobiles.map((mobile) => (

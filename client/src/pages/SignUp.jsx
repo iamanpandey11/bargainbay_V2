@@ -42,7 +42,7 @@ export default function SignUp() {
     <div className="min-h-screen mt-20">
       <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5">
         {/* left */}
-        <div className="flex-1">
+        {/* <div className="flex-1">
           <Link to="/" className="font-bold dark:text-white text-4xl">
             <img src={logo} alt="image" className="h-20" />
           </Link>
@@ -50,7 +50,7 @@ export default function SignUp() {
             This is a demo project. You can sign up with your email and password
             or with Google.
           </p>
-        </div>
+        </div> */}
         {/* right */}
 
         <div className="flex-1">
@@ -83,7 +83,7 @@ export default function SignUp() {
               />
             </div>
             <Button
-              gradientDuoTone="purpleToPink"
+              gradientDuoTone="cyanToBlue"
               type="submit"
               disabled={loading}
             >
@@ -96,6 +96,12 @@ export default function SignUp() {
                 "Sign Up"
               )}
             </Button>
+          
+                <div class="flex items-center">
+                    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                    <label for="link-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 dark:text-blue-500 hover:underline">terms and conditions</a>.</label>
+                </div>
+
             <OAuth />
           </form>
           <div className="flex gap-2 text-sm mt-5">

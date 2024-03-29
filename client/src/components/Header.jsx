@@ -234,7 +234,7 @@ export default function Header() {
                 <Link to={"/dashboard?tab=profile"}>Profile</Link>
               </DropdownItem>
               <DropdownItem key="team_settings">
-                <Link to="/">Home</Link>
+                <Link to="/home">Home</Link>
               </DropdownItem>
               <DropdownItem key="analytics">
                 <Link to="/mobile">Mobile</Link>

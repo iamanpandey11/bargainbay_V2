@@ -11,15 +11,15 @@ import {
 
 export default function FooterCom() {
   return (
-    <Footer container className="bg-gray-800 text-white">
+    <Footer container className="bg-gray-800 text-white rounded-none">
       <div className="w-full max-w-7xl mx-auto py-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="text-center">
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* <div className="text-center">
             <Link to="/">
               <img src={logo} alt="image" className="h-20 mx-auto" />
             </Link>
-          </div>
-          <div>
+          </div> */}
+          <div >
             <h2 className="text-lg font-semibold mb-4">About</h2>
             <ul className="space-y-2">
               <li>
