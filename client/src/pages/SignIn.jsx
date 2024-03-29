@@ -37,7 +37,7 @@ export default function SignIn() {
 
       if (res.ok) {
         dispatch(signInSuccess(data));
-        navigate("/");
+        navigate("/home");
       }
     } catch (error) {
       dispatch(signInFailure(error.message));
@@ -47,7 +47,7 @@ export default function SignIn() {
     <div className="min-h-screen mt-20">
       <div className="flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5">
         {/* left */}
-        <div className="flex-1">
+        {/* <div className="flex-1">
           <Link to="/" className="font-bold dark:text-white text-4xl">
             <img src={logo} alt="image" className="h-20" />
           </Link>
@@ -55,7 +55,7 @@ export default function SignIn() {
             This is a demo project. You can sign in with your email and password
             or with Google.
           </p>
-        </div>
+        </div> */}
         {/* right */}
 
         <div className="flex-1">
@@ -79,7 +79,8 @@ export default function SignIn() {
               />
             </div>
             <Button
-              gradientDuoTone="purpleToPink"
+              color="info"
+              variant
               type="submit"
               disabled={loading}
             >
@@ -96,7 +97,7 @@ export default function SignIn() {
           </form>
           <div className="flex gap-2 text-sm mt-5">
             <span>Dont Have an account?</span>
-            <Link to="/sign-up" className="text-blue-500">
+            <Link to="/sign-up" className="text-teal-500">
               Sign Up
             </Link>
           </div>

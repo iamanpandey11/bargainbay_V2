@@ -25,7 +25,8 @@ export default function App() {
       <ScrollToTop />
       <Header />
       <Routes >
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<SignIn />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/laptop" element={<Laptop />} />
         <Route path="/laptop/:id" element={<OneLaptop />} />

@@ -1,9 +1,10 @@
+import styles from "./About.module.css"
 export default function About() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-screen  border-2">
       <div className="max-w-2xl mx-auto p-3 text-center">
         <div>
-          <h1 className="text-3xl font font-semibold text-center my-7">
+          <h1 className="text-3xl my-4 font font-semibold text-center">
             About Bargein Bay
           </h1>
           <div className="text-md text-gray-500 flex flex-col gap-6">
@@ -34,6 +35,13 @@ export default function About() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="border-2 border-red-500">
+      <div className={styles.parent}>
+<div className={styles.div1}><img src="../images/logo.jpg" alt="aman" /> </div>
+<div className={styles.div2}> </div>
+<div className={styles.div3}> </div>
+</div>
       </div>
     </div>
   );

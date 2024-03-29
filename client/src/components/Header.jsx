@@ -52,6 +52,7 @@ export default function Header() {
         console.log(data.message);
       } else {
         dispatch(signoutSuccess());
+        navigate("/")
       }
     } catch (error) {
       console.log(error.message);
@@ -154,7 +155,7 @@ export default function Header() {
           <NavbarContent className="hidden sm:flex gap-3">
             <NavbarItem>
               <NavLink
-                to="/"
+                to="/home"
                 color="foreground"
                 className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "text-red-500" : ""
@@ -254,7 +255,7 @@ export default function Header() {
           </Dropdown>
         ) : (
           <Link to="/sign-in">
-            <Button gradientDuoTone="purpleToBlue" outline>
+            <Button gradientDuoTone="cyanToBlue" outline>
               Sign In
             </Button>
           </Link>
