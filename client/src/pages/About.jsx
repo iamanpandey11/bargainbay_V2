@@ -23,6 +23,11 @@ export default function About() {
     name:"Shashank Shukla",
     role: "Database Manager",
     image: shashank,
+  },
+  {
+    name:"Kuldeep Pandey",
+    role: "Database Manager",
+    image: "",
   },];
   return (
     <div className="min-h-screen  ">
